@@ -20,8 +20,8 @@
 </p>
 
 <p align="center">
-    <img alt="Build Status" src="./actions/workflows/tests.yml/badge.svg">
-    <img alt="Coverage" src="./blob/badges/docs/badges/backend/coverage-total.svg">
+    <img alt="Build Status" src="../../actions/workflows/tests.yml/badge.svg">
+    <img alt="Coverage" src="../badges/docs/badges/backend/coverage-total.svg">
     <img alt="License" src="https://img.shields.io/github/license/ProjectOAWA/OAuth2.1-with-WebAuthn">
 </p>
 
