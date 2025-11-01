@@ -14,10 +14,10 @@ build: $(SERVICES)
 
 # Run `make auth-server` or `make vault` from top-level directory to build specific service
 $(SERVICES):
-	$(MAKE) -C src/$@
+	$(MAKE) -C services/$@
 
 dev:
-	make dev -C ./src/auth-server
+	make dev -C ./services/auth-server
 
 
 ##########
@@ -29,9 +29,9 @@ client:
 		echo "Creating virtual environment..."; \
 		python3 -m venv .venv; \
 		echo "Installing dependencies from pyproject.toml..."; \
-		make bootstrap -C ./src/client; \
+		make bootstrap -C ./clients/python-client; \
 	else \
-		make update -C ./src/client; \
+		make update -C ./clients/python-client; \
 	fi
 	. .venv/bin/activate && python3 -m oauth_client
 	
@@ -41,7 +41,7 @@ client:
 #########
 
 install:
-	make install -C ./src/auth-server
+	make install -C ./services/auth-server
 
 test:
-	make test -C ./src/auth-server
+	make test -C ./services/auth-server
