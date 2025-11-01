@@ -4,3 +4,6 @@
 [submodule "services/auth-server"]
 	path = services/auth-server
 	url = https://github.com/ProjectOAWA/auth-server.git
+[submodule "clients/python-client"]
+	path = clients/python-client
+	url = https://github.com/ProjectOAWA/python-client.git
